@@ -1,10 +1,9 @@
 body {
 	background-color: #ffc425;
-}
-
-h1, p {
 	color: #d11141;
 	font-family: "Courier New", Courier, monospace;
+	font-size:16px;
 }
-
-
+h1 {
+	font-size:2em;
+}
