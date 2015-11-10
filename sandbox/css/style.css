@@ -1,0 +1,102 @@
+
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+* {
+    margin:0;
+    padding:0;
+}
+body {
+	background: url(../images/IMG_0373.jpg);
+	background-position:0px 80px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top:0px;
+  height: 400px;
+	color: #BEDB39;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-size:0em;
+}
+nav {
+  display: inline-block;
+  font-size: 24px
+ }
+.navcontainer {
+	width: 100%;
+	background-color: #fff;
+	margin-top: 0;
+	display: inline-block;
+}
+ul {
+  list-style-type: none;
+  margin-top:0;
+  width:100%;
+  background-color: #fff;
+  display: inline-block;
+}
+li {
+  float: left;
+  margin-top:0;
+  background-color: 0;
+ }
+a:link, a:visited {
+  display: block;
+  font-weight: bold;
+  color: #FD7400;
+  background-color: #FFF;
+  text-align: center;
+  padding: 29px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover, a:active {
+  background-color: #BEDB39;
+}
+.link {
+	float: right;
+}
+#logo a {
+	text-decoration: none;
+	padding:0;
+}
+h1 {
+  font-size: 48px;
+}
+.slogan {
+	text-align: center;
+	margin-top: 300px;
+  font-family: 'Finger Paint', cursive; 
+	color: #FD7400;
+}
+.box {
+	border: 6px solid #F2CE1B;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+  width: auto;
+  background-color: #fff;
+  font-size: 14px;
+  color: #FD7400;
+  float: left;
+  position: relative;
+}
+ #title {
+  font-weight: bold;
+  font-family: 'Bangers', cursive;
+ 	font-size: 24px;
+ }
+#subnav ul {
+  list-style-type: none;
+  margin-top:0;
+  width:100%;
+  background-color: #fff;
+  display: inline-block;
+  font-size: 24px;
+}
+#subnav li {
+  float: left;
+  margin-top:0;
+  background-color: 0;
+}
+footer {
+  font-size: 24px;
+}
