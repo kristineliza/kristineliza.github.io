@@ -1,0 +1,152 @@
+
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+* {
+    margin:0;
+    padding:0;
+}
+head {
+  background-color: #FFF;
+}
+body {
+	margin-top:0px;
+	color: #F2931F;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-size:1em;
+}
+nav {
+  font-size: 24px;
+  background-color: #fff;
+}
+#navcontainer {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 0;
+  overflow:auto;
+}
+ul {
+  list-style: none;
+  background-color: #FFF;
+  padding: 10px;
+  margin: 0px;
+  float: right;
+}
+ul li {
+  display: block;
+  background:#fff;
+  float: left;
+}
+ li ul {
+  display: none;
+  background: #fff;
+}
+.submenu1 {
+  position:absolute;
+}
+ul li a {
+  display: block;
+  background: #FFF;
+  padding: 29px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #F2931F;
+  margin:0;
+  font-weight: bold;
+  position:relative;
+}
+ul li a:hover {
+  background: #1E8C65;
+  display: block;
+}
+li:hover ul {
+  background: #fff;
+  display: block; 
+}
+li:hover li {
+  background:#fff;
+  float: none;
+}
+li:hover a {
+  background: #FFF;
+}
+li:hover li a:hover {
+  background: #1E8C65;
+}
+#logo {
+	text-decoration: none;
+	margin-top: 5px;
+  float: left;
+} 
+.slogan {
+	text-align: left;
+  font-family: 'Finger Paint', cursive; 
+  font-size: 48px;
+	color: #F2931F;
+  background-color:#1E8C65;
+  background-image: url(../images/IMG_0889.JPG);
+  background-attachment: fixed;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+.box {
+	border: 6px solid #F2CE1B;
+  height: auto;
+  margin: 20px;
+  padding: 15px;
+  display: inline;
+  background-color: #fff;
+  font-size: 14px;
+  color: #FD7400;
+  float: left;
+  overflow:hidden;
+}
+ #title {
+  font-weight: bold;
+  font-family: 'Bangers', cursive;
+ 	font-size: 24px;
+ }
+#subnav {
+  background-color: #fff;
+  width: auto;
+  margin-top: 0;
+  float: left;
+  overflow:auto;
+}
+#subnav ul {
+  list-style-type: none;
+  margin-top:0;
+  background-color: #fff;
+  display: inline-block;
+  font-size: 24px;
+}
+#subnav li {
+  float: left;
+  margin-top:0;
+  background-color: 0;
+}
+footer {
+  font-size: 24px;
+}
+/*.clearfix-after {
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+  content: "";
+  clear: both;
+  overflow: auto;
+}*/
+.blanket {
+  background-color: #FF4D41;
+  background-size: contain;
+  position:relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  color: #F2931F;
+  overflow:visible;
+  float: left;
+}
