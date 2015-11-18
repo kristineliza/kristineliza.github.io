@@ -1,0 +1,202 @@
+
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+@import url(https://fonts.googleapis.com/css?family=Megrim);
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+head {
+  background-color: #FFF;
+}
+body {
+	margin-top:0px;
+	color: #F2931F;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-size:24px;
+  background-color: #91B221;
+}
+nav {
+  background-color: #fff;
+}
+#navtop {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 0;
+  overflow:auto;
+}
+ul {
+  list-style: none;
+  background-color: #FFF;
+  padding: 10px;
+  margin: 0px;
+  float: right;
+}
+ul li {
+  display: block;
+  background:#fff;
+  float: left;
+}
+ li ul {
+  display: none;
+  background: #fff;
+}
+.submenu1 {
+  position:absolute;
+}
+ul li a {
+  display: block;
+  background: #FFF;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #F2931F;
+  margin:0;
+  font-weight: bold;
+  position:relative;
+}
+ul li a:hover {
+  background: #1E8C65;
+  display: block;
+}
+li:hover ul {
+  background: #fff;
+  display: block; 
+}
+li:hover li {
+  background:#fff;
+  float: none;
+}
+li:hover a {
+  background: #FFF;
+}
+li:hover li a:hover {
+  background: #1E8C65;
+}
+#logo {
+	text-decoration: none;
+	margin-top: 10px;
+  float: left;
+} 
+header {
+	text-align: left;
+  font-family: 'Special Elite', cursive; 
+  font-size: 30px;
+	color: #F2931F;
+  background-color:#1E8C65;
+  background-image: url(../images/mannequinwindow.jpg);
+  background-attachment: fixed;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+h1 {
+  float:left;
+  -webkit-transform: rotate(-45deg); 
+  -moz-transform: rotate(-45deg); 
+  padding: 1.5em .5em;
+}
+h2 {
+  float: left;
+  text-align:center;
+  margin: 1em 2em;
+  font-family: "Megrim", cursive;
+  background-color: rgba(144,195,212,0.5);
+  color: #F2CE1B;
+  overflow: auto;
+}
+h3 {
+  text-align: center;
+  background-color: #0F2459;
+  color: #F2CE1B;
+  font-size: 36px;
+}
+.box {
+	border: 1px solid #F2CE1B;
+  height: auto;
+  margin: 20px;
+  padding: 15px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #FD7400;
+  float: left;
+  overflow:hidden;
+}
+ #title {
+  font-weight: bold;
+  font-family: 'Bangers', cursive;
+ 	font-size: 24px;
+ }
+#subnav {
+  background-color: #fff;
+  width: auto;
+  margin-top: 0;
+  float: left;
+  width: 100%;
+  overflow:auto;
+}
+#subnav ul {
+  list-style-type: none;
+  margin-top:0;
+  background-color: #fff;
+  float: left;
+  font-size: 24px;
+}
+#subnav li {
+  float: left;
+  margin-top:0;
+  background-color: 0;
+}
+footer {
+  font-size: 24px;
+}
+.clearfix-after {
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+  content: "";
+  clear: both;
+  overflow: auto;
+}
+#blanket1 {
+  background-color: #FF4D41;
+  background-size: contain;
+  position:relative;
+  width: 33.333%;
+  height: auto;
+  padding: 20px;
+  color: #F2931F;
+  overflow:visible;
+  float: left;
+}
+#blanket2 {
+  background-color: #E5CA21;
+  background-size: contain;
+  position:relative;
+  width: 33.333%;
+  height: auto;
+  padding: 20px;
+  color: #F2931F;
+  overflow:visible;
+  float: left;
+}
+#blanket3 {
+  background-color: #37154A;
+  background-size: contain;
+  position:relative;
+  width: 33.333%;
+  height: auto;
+  padding: 20px;
+  color: #F2931F;
+  overflow:visible;
+  float: left;
+}
+
+
+
