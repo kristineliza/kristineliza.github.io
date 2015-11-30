@@ -1,0 +1,65 @@
+<!DOCTYPE html>	
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<title>Kristin Elizabot</title>
+</head>
+	<body>
+		<nav id="navtop">
+			<a id="logo" href="#"><img src="images/midcentke2.png" alt="kristin logo"></a>
+			<ul class="clearfix">
+				<li class="link"><a href="#">WHO</a></li>
+  				<li class="link"><a href="#">READ</a>
+  					<ul class="submenu1">
+  						<li><a href="#">Blog</a></li>
+  						<li><a href="#">Zines</a></li>
+  					</ul>
+  				</li>
+  				<li class="link"><a href="#">SEE</a>
+  					<ul class="submenu1">
+  						<li><a href="#">Photography</a></li>
+  						<li><a href="#">Mixed Media</a></li>
+  					</ul>
+  				</li>	
+  				<li class="link"><a href="#">Contact</a></li>
+  			</ul>	
+		</nav>
+	<header>
+    		<div id="first">
+    			<p>Kristin</p>
+    		</div>
+    		<div id="middle">
+    			<p>Elizabeth</p>
+    		</div>
+			<div id="see">
+				<p><img src="images/backpatch.png"></p>
+			</div>
+			<div id="last">
+			<p>Mahoney</p>
+			</div>		
+	</header>	
+	<div class="clearfix">	
+	<nav id="subnav">	
+		<ul>
+			<li class="link"><a href="https://twitter.com/kristinelizabot">Twitter</a></li>
+			<li class="link"><a href="https://instagram.com/maxmaxattack/">Instagram</a></li>
+			<li class="link"><a href="http://www.pigeongram.com/">Contact by Carrier Pigeon</a></li>
+		</ul>
+	</nav>
+	</div>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 200) {
+                $('#navtop').fadeIn(500);
+            } else {
+                $('#navtop').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+</script>		
+</body>
+</html>

@@ -3,17 +3,15 @@
 @import url(https://fonts.googleapis.com/css?family=Finger+Paint);
 @import url(https://fonts.googleapis.com/css?family=Special+Elite);
 @import url(https://fonts.googleapis.com/css?family=Megrim);
+
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-head {
-  background-color: #FFF;
-}
 body {
 	color: #F8E8C6;
-	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-family: "Special Elite", serif;
 	font-size:24px;
   background-color: #588AAD;
 }
@@ -21,7 +19,8 @@ body {
 #navtop {
   width: 100%;
   margin-top: 0;
-  overflow:auto;
+  position: fixed;
+  background: #588AAD;
 }
 ul {
   list-style: none;
@@ -38,6 +37,7 @@ ul li {
 }
 .submenu1 {
   position:absolute;
+  overflow: auto;
 }
 ul li a {
   display: block;
@@ -124,7 +124,6 @@ h4 {
  	font-size: 24px;
  }
 #subnav {
-  background-color: #fff;
   width: auto;
   margin-top: 0;
   float: left;
@@ -134,7 +133,6 @@ h4 {
 #subnav ul {
   list-style-type: none;
   margin-top:0;
-  background-color: #fff;
   float: left;
   font-size: 24px;
 }

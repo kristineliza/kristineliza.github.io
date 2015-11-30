@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "typographica";
+  src: url(..fonts/typographica.otf) format ("opentype");
+}
+@font-face {
+  font-family: "nougat";
+  src: url(..fonts/nougat-extrablack.ttf) format ("truetype");
+}
+@font-face {
+  font-family: "astrud";
+  src: url(..fonts/astrud.ttf) format ("truetype");
+}
+@font-face {
+  font-family:"apocalypse";
+  src: url(..fonts/times_new_yorker.ttf) format ("truetype");
+}
+@font-face {
+  font-family:"fifties";
+  src: url(..fonts/fifties_movies.ttf) format ("truetype");
+}
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+  background: #F8E8C6;
+  color: #F64B05;
+}
+header{ 
+  height:10000px;
+  z-index:-1;
+  width: 75%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+#navtop {
+  display:none;
+  position:fixed;
+  height: auto;
+  width:100%; 
+  background-color: #588AAD;
+  color:#F8E8C6;
+  z-index:9999;
+}
+ul {
+  list-style: none;
+  float: right;
+}
+ul li {
+  display: block;
+  float: left;
+}
+ li ul {
+  display: none;
+}
+.submenu1 {
+  position:absolute;
+  overflow: auto;
+}
+ul li a {
+  display: block;
+  padding: .2em .5em .5em 0;
+  font-family:"astrud";
+  font-size: 36px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #F8E8C6;
+  margin:0;
+  position:relative;
+}
+ul li a:hover {
+  background: #F64B05;
+  display: block;
+}
+li:hover ul {
+  display: block; 
+}
+li:hover li {
+  float: none;
+}
+li:hover a {
+  background: #588AAD;
+}
+li:hover li a:hover {
+  background: #F64B05;
+}
+#logo {
+  text-decoration: none;
+  float: left;
+ } 
+div {
+  height:100%;
+  float:left;
+  font-size:7em;
+  font-family: "astrud";
+}
+#first {
+  background:#E8AE04;
+}
+#middle {
+  background:#588AAD;
+}
+#see {
+  background:#F8E8C6;
+}
+#last {
+  background:#F64B05;
+}
+p {
+  color:#fbeace;
+  line-height:.77em;
+  text-decoration: none;
+  display:block;
+}
+#first p{
+  background:#588AAD;
+  padding-top:.5em;
+}
+#middle p{
+  background:#F64B05;
+  padding-top:1.5em;
+}
+#see p{
+  background:#588AAD;
+}
+#last p{
+  background:#E8AE04;
+  padding-top:.66em;
+}
+#subnav {
+  margin-top: 0;
+  float: left;
+  width: 100%;
+  background-color:#588AAD;
+}
+#subnav ul {
+  list-style-type: none;
+  width:100%;
+  margin-top:0;
+  position: relative;
+  float: left;
+  font-size: 24px;
+  background-color: #588AAD;
+}
+#subnav li {
+  float: left;
+  margin-top:0;
+  background-color: #588AAD;
+}
+.clearfix-after {
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+  content: "";
+  clear: both;
+  overflow: auto;
+}
