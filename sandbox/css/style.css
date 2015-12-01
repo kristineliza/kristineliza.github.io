@@ -1,37 +1,42 @@
 @font-face {
   font-family: "typographica";
-  src: url(..fonts/typographica-webfont.eot) format (embedded-opentype),
+  src: url(..fonts/typographica-webfont.eot) format (eot),
        url(..fonts/typographica-webfont.woff2) format (woff2),
        url(..fonts/typographica-webfont.woff) format (woff),
-       url(..fonts/typographica-webfont.ttf) format (truetype);
+       url(..fonts/typographica-webfont.ttf) format (truetype),
+       url(..fonts/typographica-webfont.svg#typographica) format (svg)
 }
 @font-face {
   font-family:"astrud";
-  src: url(..fonts/astrud-webfont.eot) format (embedded-opentype),
+  src: url(..fonts/astrud-webfont.eot) format (eot),
        url(..fonts/astrud-webfont.woff2) format (woff2),
        url(..fonts/astrud-webfont.woff) format (woff),
-       url(..fonts/astrud-webfont.ttf) format (truetype);
+       url(..fonts/astrud-webfont.ttf) format (truetype),
+       url(..fonts/astrud-webfont.svg#astrud) format (svg);
 }
 @font-face {
   font-family:"fifties";
-  src: url(..fonts/fifties_movies-webfont.eot) format (embedded-opentype),
+  src: url(..fonts/fifties_movies-webfont.eot) format (eot),
        url(..fonts/fifties_movies-webfont.woff2) format (woff2),
        url(..fonts/fifties_movies-webfont.woff) format (woff),
-       url(..fonts/fifties_movies-webfont.ttf) format (truetype);
+       url(..fonts/fifties_movies-webfont.ttf) format (truetype),
+       url(..fonts/fifties_movies-webfont.svg#fifties) format(svg);
 }
 @font-face {
   font-family:"electro";
-  src: url(..fonts/electrorocket_bold-webfont.eot) format (embedded-opentype), 
+  src: url(..fonts/electrorocket_bold-webfont.eot) format (eot), 
       url(..fonts/electrorocket_bold-webfont.woff2) format (woff2),
       url(..fonts/electrorocket_bold-webfont.woff) format (woff),
-      url(..fonts/electrorocket_bold-webfont.ttf) format (truetype);
+      url(..fonts/electrorocket_bold-webfont.ttf) format (truetype),
+      url(..fonts/electrorocket_bold-webfont.svg#electro) format (svg);
 }
 @font-face {
   font-family:"antiquebook";
-  src: url(..fonts/antique_book_cover-webfont.eot) format (embedded-opentype),
+  src: url(..fonts/antique_book_cover-webfont.eot) format (eot),
        url(..fonts/antique_book_cover-webfont.woff2) format (woff2),
        url(..fonts/antique_book_cover-webfont.woff) format (woff),
-       url(..fonts/antique_book_cover-webfont.ttf) format (truetype);
+       url(..fonts/antique_book_cover-webfont.ttf) format (truetype),
+       url(..fonts/antique_book_cover-webfont.svg#antiquebook) format (svg);
 }
 * {
   margin:0;
@@ -111,7 +116,7 @@ div {
   height:100%;
   float:left;
   font-size:4em;
-  font-family: "astrud";
+  font-family: "astrud", "Arial Black";
 }
 #first {
   background:#E8AE04;
