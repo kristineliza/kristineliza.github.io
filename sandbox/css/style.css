@@ -25,6 +25,28 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'astrud';
+    src: url('../fonts/astrud-webfont.eot');
+    src: url('../fonts/astrud-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/astrud-webfont.woff2') format('woff2'),
+         url('../fonts/astrud-webfont.woff') format('woff'),
+         url('../fonts/astrud-webfont.ttf') format('truetype'),
+         url('../fonts/astrud-webfont.svg#astrud') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'typographica';
+    src: url('../fonts/typographica-webfont.eot');
+    src: url('../fonts/typographica-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/typographica-webfont.woff2') format('woff2'),
+         url('../fonts/typographica-webfont.woff') format('woff'),
+         url('../fonts/typographica-webfont.ttf') format('truetype'),
+         url('../fonts/typographica-webfont.svg#typographica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
   background: #F8E8C6;
   color: #F64B05;
@@ -98,7 +120,7 @@ div {
   height:100%;
   float:left;
   font-size:4em;
-  font-family:'risqueregular', 'Arial Black';
+  font-family:'astrud', 'Arial Black';
 }
 #first {
   background:#E8AE04;
