@@ -1,29 +1,29 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+ } 
 @font-face {
     font-family: 'matchbookregular';
-    src: url('..fonts/matchbook-webfont.eot');
-    src: url('..fonts/matchbook-webfont.eot?#iefix') format('embedded-opentype'),
-         url('..fonts/matchbook-webfont.woff2') format('woff2'),
-         url('..fonts/matchbook-webfont.woff') format('woff'),
-         url('..fonts/matchbook-webfont.ttf') format('truetype'),
-         url('..fonts/matchbook-webfont.svg#matchbookregular') format('svg');
+    src: url('../fonts/matchbook-webfont.eot');
+    src: url('../fonts/matchbook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/matchbook-webfont.woff2') format('woff2'),
+         url('../fonts/matchbook-webfont.woff') format('woff'),
+         url('../fonts/matchbook-webfont.ttf') format('truetype'),
+         url('../fonts/matchbook-webfont.svg#matchbookregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'risqueregular';
-    src: url('..fonts/risque-regular-webfont.eot');
-    src: url('..fonts/risque-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('..fonts/risque-regular-webfont.woff2') format('woff2'),
-         url('..fonts/risque-regular-webfont.woff') format('woff'),
-         url('..fontsrisque-regular-webfont.ttf') format('truetype'),
-         url('..fonts/risque-regular-webfont.svg#risqueregular') format('svg');
+    src: url('../fonts/risque-regular-webfont.eot');
+    src: url('../fonts/risque-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/risque-regular-webfont.woff2') format('woff2'),
+         url('../fonts/risque-regular-webfont.woff') format('woff'),
+         url('../fontsrisque-regular-webfont.ttf') format('truetype'),
+         url('../fonts/risque-regular-webfont.svg#risqueregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
 }
 body {
   background: #F8E8C6;
