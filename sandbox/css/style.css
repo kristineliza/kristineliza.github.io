@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'typographica';
-  src: url('..fonts/typographica-webfont.eot') format ('eot'),
+  src: url('..fonts/typographica-webfont.ttf') format ('truetype');
+/*       url('..fonts/typographica-webfont.eot') format ('eot'),
        url('..fonts/typographica-webfont.woff2') format ('woff2'),
        url('..fonts/typographica-webfont.woff') format ('woff'),
-       url('..fonts/typographica-webfont.ttf') format ('truetype'),
-       url('..fonts/typographica-webfont.svg#typographica') format ('svg')
+       url('..fonts/typographica-webfont.svg#typographica') format ('svg')*/
 }
 @font-face {
   font-family:'astrud';
-  src: url('..fonts/astrud-webfont.eot') format ('eot'),
+  src: url('..fonts/astrud-webfont.ttf') format ('truetype');
+/*       url('..fonts/astrud-webfont.svg#astrud') format ('svg')
+       url('..fonts/astrud-webfont.eot') format ('eot'),
        url('..fonts/astrud-webfont.woff2') format ('woff2'),
-       url('..fonts/astrud-webfont.woff') format ('woff'),
-       url('..fonts/astrud-webfont.ttf') format ('truetype'),
-       url('..fonts/astrud-webfont.svg#astrud') format ('svg');
+       url('..fonts/astrud-webfont.woff') format ('woff'),*/
 }
 
 /*Copyright (c) 2014, Peter Wiegel (Font) (http://www.peter-wiegel.de/),
