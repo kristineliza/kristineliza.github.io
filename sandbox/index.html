@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>	
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -8,61 +8,37 @@
 		<nav id="navtop">
 			<a id="logo" href="#"><img src="images/midcentke2.png" alt="kristin logo"></a>
 			<ul class="clearfix">
-				<li class="link"><a href="#">Manifesto</a></li>
-  				<li class="link"><a href="#">Projects</a>
+				<li class="link"><a href="#">WHO</a></li>
+  				<li class="link"><a href="#">READ</a>
+  					<ul class="submenu1">
+  						<li><a href="#">Blog</a></li>
+  						<li><a href="#">Zines</a></li>
+  					</ul>
+  				</li>
+  				<li class="link"><a href="#">SEE</a>
   					<ul class="submenu1">
   						<li><a href="#">Photography</a></li>
-  						<li><a href="#">Writing</a></li>
   						<li><a href="#">Mixed Media</a></li>
   					</ul>
-  						</li>
+  				</li>	
   				<li class="link"><a href="#">Contact</a></li>
   			</ul>	
 		</nav>
-	<header class="clearfix">
-		<h1>Kristin<br>
-			Elizabeth<br>
-			Mahoney</h1>
-		<h2>Maker of Dysfunctional Rainbows</h2>
-	</header>
-	<h3>Latest + Greatest</h3>
-	<div id="blanket1">	
-		<section class="box">
-				<img src="images/rikercat.png" alt="evil tuxedo cat">
-		</section>
+	<header>
+    		<div id="first">
+    			<p>Kristin</p>
+    		</div>
+    		<div id="middle">
+    			<p>Elizabeth</p>
+    		</div>
+			<div id="see">
+				<p><img src="images/backpatch.png"></p>
 			</div>
-		<div id="blanket2">	
-		<section class="box">
-				<h4>Ode to Grape Gatorade</h4>
-				<p></p>
-				I had a thirst that I could not escape.<br>
-				I needed a beverage with a flavor of grape.<br>
-				A Misty at Dairy Queen! Away I will go!<br>
-				I drank it too fast; brain freeze! Oh no!<br>
-				Well maybe I should just eat the blasted fruit!<br>
-				I chewed and chewed but was still thirsty to boot!<br>
-				Grape soda, who loves you?<br>
-				I do, I do I do-oo!<br>
-				I drank you but my thirst only grew.<br>
-				And then I saw the bottle in the 7-11.<br>
-				The light shown upon it, descended from heaven.<br>
-				Fine! It wasn't from heaven. More like fluorescent fixtures.<br>
-				Look, cut it out. You get the picture.<br>
-				No, I understand "fixture" and "picture" don't perfectly rhyme.<br>
-				I'm trying to tell a story here while wasting your time.<br>
-				Anyway, there it was: Grape Gatorade.<br>
-				"What? This exists?" My day had been made.<br>
-				I chugged from the bottle and it was just what I needed.<br>
-				After searching high and low, I had finally succeeded.<br>
-				I think more people would get on the Gatorade bus<br>
-				If the company sponsored us.<br>
-		</section>
-		</div>
-		<div id="blanket3">
-			<section class="box">
-				<img src="images/deadendkids.png" alt="dead end sign in a ghost town">
-		</section>
-	</div>
+			<div id="last">
+			<p>Mahoney</p>
+			</div>		
+	</header>	
+	<div class="clearfix">	
 	<nav id="subnav">	
 		<ul>
 			<li class="link"><a href="https://twitter.com/kristinelizabot">Twitter</a></li>
@@ -70,5 +46,20 @@
 			<li class="link"><a href="http://www.pigeongram.com/">Contact by Carrier Pigeon</a></li>
 		</ul>
 	</nav>
+	</div>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 200) {
+                $('#navtop').fadeIn(500);
+            } else {
+                $('#navtop').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+</script>		
 </body>
 </html>

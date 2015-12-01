@@ -1,31 +1,66 @@
-
-@import url(https://fonts.googleapis.com/css?family=Bangers);
-@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
-@import url(https://fonts.googleapis.com/css?family=Special+Elite);
-@import url(https://fonts.googleapis.com/css?family=Megrim);
-
+@font-face {
+  font-family: "typographica";
+  src: url(..fonts/typographica-webfont.eot) format ("embedded-opentype");
+  src: url(..fonts/typographica-webfont.woff2) format ("woff2");
+  src: url(..fonts/typographica-webfont.woff) format ("woff");
+  src: url(..fonts/typographica-webfont.ttf) format ("truetype");
+}
+@font-face {
+  font-family:"astrud";
+  src: url(..fonts/astrud-webfont.eot) format ("embedded-opentype");
+  src: url(..fonts/astrud-webfont.woff2) format ("woff2");
+  src: url(..fonts/astrud-webfont.woff) format ("woff");
+  src: url(..fonts/astrud-webfont.ttf) format ("truetype");
+}
+@font-face {
+  font-family:"fifties";
+  src: url(..fonts/fifties_movies-webfont.eot) format ("embedded-opentype");
+  src: url(..fonts/fifties_movies-webfont.woff2) format ("woff2");
+  src: url(..fonts/fifties_movies-webfont.woff) format ("woff");
+  src: url(..fonts/fifties_movies-webfont.ttf) format ("truetype");
+}
+@font-face {
+  font-family:"electro";
+  src: url(..fonts/electrorocket_bold-webfont.eot) format ("embedded-opentype");
+  src: url(..fonts/electrorocket_bold-webfont.woff2) format ("woff2");
+  src: url(..fonts/electrorocket_bold-webfont.woff) format ("woff");
+  src: url(..fonts/electrorocket_bold-webfont.ttf) format ("truetype");
+}
+@font-face {
+  font-family:"antiquebook";
+  src: url(..fonts/antique_book_cover-webfont.eot) format ("embedded-opentype");
+  src: url(..fonts/antique_book_cover-webfont.woff2) format ("woff2");
+  src: url(..fonts/antique_book_cover-webfont.woff) format ("woff");
+  src: url(..fonts/antique_book_cover-webfont.ttf) format ("truetype");
+}
 * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 body {
-	color: #F8E8C6;
-	font-family: "Special Elite", serif;
-	font-size:24px;
-  background-color: #588AAD;
+  background: #F8E8C6;
+  color: #F64B05;
 }
-
+header{ 
+  height:10000px;
+  z-index:-1;
+  width: 75%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
 #navtop {
-  width: 100%;
-  margin-top: 0;
-  position: fixed;
-  background: #588AAD;
+  display:none;
+  position:fixed;
+  height: auto;
+  width:100%; 
+  background-color: #588AAD;
+  color:#F8E8C6;
+  z-index:9999;
 }
 ul {
   list-style: none;
-  padding: 10px;
-  margin: 0px;
   float: right;
 }
 ul li {
@@ -41,14 +76,15 @@ ul li {
 }
 ul li a {
   display: block;
-  padding: 10px;
+  padding: .2em .5em .5em 0;
+  font-family:"astrud";
+  font-size: 36px;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
   color: #F8E8C6;
   margin:0;
-  font-weight: bold;
   position:relative;
 }
 ul li a:hover {
@@ -68,81 +104,77 @@ li:hover li a:hover {
   background: #F64B05;
 }
 #logo {
-	text-decoration: none;
-	margin-top: 10px;
+  text-decoration: none;
   float: left;
-} 
-header {
-	text-align: left;
-  font-family: 'Special Elite', cursive; 
-  font-size: 30px;
-	color: #F8E8C6;
-  background-color:#E8AE04;
-  background-image: url(../images/mannequinwindow.jpg);
-  background-attachment: fixed;
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 450px;
-}
-
-h1 {
+ } 
+div {
+  height:100%;
   float:left;
-  -webkit-transform: rotate(-45deg); 
-  -moz-transform: rotate(-45deg); 
-  padding: 1.5em .5em;
+  font-size:4em;
+  font-family: "astrud";
 }
-h2 {
-  float: left;
-  text-align:center;
-  margin: 1em 2em;
-  font-family: "Megrim", cursive;
-  background-color: rgba(144,195,212,0.5);
-  color: #F2CE1B;
-  overflow: auto;
+#first {
+  background:#E8AE04;
+  width:25%;
 }
-h3 {
-  text-align: center;
-  background-color: #0F2459;
-  color: #F2CE1B;
-  font-size: 36px;
+#middle {
+  background:#588AAD;
+  width:25%;
 }
-.box {
-	border: 1px solid #F2CE1B;
-  height: auto;
-  margin: 20px;
-  padding: 15px;
-  background-color: #fff;
-  font-size: 14px;
-  color: #FD7400;
-  float: left;
+#see {
+  background:#F8E8C6;
+  width:25%;
+}
+#last {
+  background:#F64B05;
+  width:25%;
+}
+p {
+  color:#fbeace;
+  line-height:.77em;
+  text-decoration: none;
+  display:block;
+}
+#first p{
+  background:#588AAD;
+  padding-top:.5em;
   overflow:hidden;
 }
-h4 {
-  font-weight: bold;
-  font-family: 'Bangers', cursive;
- 	font-size: 24px;
- }
+#middle p{
+  background:#F64B05;
+  padding-top:1.5em;
+}
+#see p{
+  background:#588AAD;
+}
+#see img{
+  overflow:hidden;
+  width:100%;
+  height:100%;
+}
+#last p{
+  background:#E8AE04;
+  padding-top:.66em;
+}
 #subnav {
-  width: auto;
   margin-top: 0;
   float: left;
   width: 100%;
-  overflow:auto;
+  background-color:#588AAD;
 }
 #subnav ul {
   list-style-type: none;
+  width:100%;
   margin-top:0;
+  position: relative;
   float: left;
   font-size: 24px;
+  background-color: #588AAD;
 }
 #subnav li {
   float: left;
   margin-top:0;
-  background-color: 0;
-}
-footer {
-  font-size: 24px;
+  background-color: #588AAD;
 }
 .clearfix-after {
   font-size: 0;
@@ -152,39 +184,3 @@ footer {
   clear: both;
   overflow: auto;
 }
-#blanket1 {
-  background-color: #FF4D41;
-  background-size: contain;
-  position:relative;
-  width: 33.333%;
-  height: auto;
-  padding: 20px;
-  color: #F2931F;
-  overflow:visible;
-  float: left;
-}
-#blanket2 {
-  background-color: #E5CA21;
-  background-size: contain;
-  position:relative;
-  width: 33.333%;
-  height: auto;
-  padding: 20px;
-  color: #F2931F;
-  overflow:visible;
-  float: left;
-}
-#blanket3 {
-  background-color: #37154A;
-  background-size: contain;
-  position:relative;
-  width: 33.333%;
-  height: auto;
-  padding: 20px;
-  color: #F2931F;
-  overflow:visible;
-  float: left;
-}
-
-
-
