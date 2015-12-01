@@ -14,7 +14,15 @@
        url('..fonts/astrud-webfont.ttf') format ('truetype'),
        url('..fonts/astrud-webfont.svg#astrud') format ('svg');
 }
-@font-face {
+
+/*Copyright (c) 2014, Peter Wiegel (Font) (http://www.peter-wiegel.de/),
+
+with Reserved Font Name „Astrud“.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL*/
+/*@font-face {
   font-family:'fifties';
   src: url('..fonts/fifties_movies-webfont.eot') format ('eot'),
        url('..fonts/fifties_movies-webfont.woff2') format ('woff2'),
@@ -37,7 +45,7 @@
        url('..fonts/antique_book_cover-webfont.woff') format ('woff'),
        url('..fonts/antique_book_cover-webfont.ttf') format ('truetype'),
        url('..fonts/antique_book_cover-webfont.svg#antiquebook') format ('svg');
-}
+}*/
 * {
   margin:0;
   padding:0;
