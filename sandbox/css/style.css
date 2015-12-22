@@ -47,15 +47,39 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'fiftiesmovies';
+    src: url('../fonts/fifties_movies-webfont.eot');
+    src: url('../fonts/fifties_movies-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fifties_movies-webfont.woff2') format('woff2'),
+         url('../fonts/fifties_movies-webfont.woff') format('woff'),
+         url('../fonts/fifties_movies-webfont.ttf') format('truetype'),
+         url('../fonts/fifties_movies-webfont.svg#matchbookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'antiquebookcover';
+    src: url('../fonts/antique_book_cover-webfont.eot');
+    src: url('../fonts/antique_book_cover-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/antique_book_cover-webfont.woff2') format('woff2'),
+         url('../fonts/antique_book_cover-webfont.woff') format('woff'),
+         url('../fonts/antique_book_cover-webfont.ttf') format('truetype'),
+         url('../fonts/antique_book_cover-webfont.svg#matchbookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
   background: #F8E8C6;
+  background-size: 100%;
   color: #F64B05;
+  font-size: 16px;
 }
-header{ 
-  height:10000px;
-  z-index:-1;
-  width: 75%;
+header { 
+  height: 13.5em;
+  width: 85%;
   position: relative;
+  z-index:-1;
   margin-right: auto;
   margin-left: auto;
 }
@@ -86,8 +110,8 @@ ul li {
 ul li a {
   display: block;
   padding: .2em .5em .5em 0;
-  font-family:'risqueregular', 'Arial Black';
-  font-size: 36px;
+  font-family:'antiquebookcover', 'Arial Black';
+  font-size: 1.75em;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -116,11 +140,18 @@ li:hover li a:hover {
   text-decoration: none;
   float: left;
  } 
-div {
-  height:100%;
+header div {
+  height: 13.5em;
+  width: auto;
   float:left;
-  font-size:6em;
-  font-family:'astrud', 'Arial Black';
+  font-size:3.25em;
+  font-family:'fiftiesmovies', 'Arial Black';
+}
+#face {
+  position: absolute;
+  z-index:555;
+  margin-top: 16em;
+  padding:0 14em;
 }
 #first {
   background:#E8AE04;
@@ -138,34 +169,167 @@ div {
   background:#F64B05;
   width:25%;
 }
-p {
+#first p{
+  background:#588AAD;
+  padding-top:1.25em;
   color:#fbeace;
-  line-height:.77em;
+  line-height:.9em;
   text-decoration: none;
   display:block;
 }
-#first p{
-  background:#588AAD;
-  padding-top:.5em;
-}
 #middle p{
   background:#F64B05;
-  padding-top:1.5em;
+  padding-top:4em;
+  color:#fbeace;
+  line-height:.9em;
+  text-decoration: none;
+  display:block;
 }
-#see p{
+#see figure{
   background:#588AAD;
-}
-#see img{
+  padding-top:.25em;
+  padding-bottom:0;
   overflow:hidden;
-  width:100%;
-  height:100%;
+  font-size:0;
+  line-height:.9em;
+  display:block;
 }
 #last p{
   background:#E8AE04;
   padding-top:.66em;
+  color:#fbeace;
+  line-height:.9em;
+  text-decoration: none;
+  display:block;
+}
+main {
+  width: 100%;
+  padding-top: 0;
+  margin: 0 auto;
+  position:relative;
+  z-index: 666;
+}
+#contentwrap {
+  float:left;
+  overflow:auto;
+  margin:0;
+}
+#column1 {
+  width:50%;
+  height:100%;
+  background:#588AAD;
+  padding: 1em;
+  float: left;
+  overflow: auto;
+}
+#column2 {
+  width: 50%;
+  height: 100%;
+  background:#E8AE04;
+  padding: 1em;
+  float:left;
+  overflow:auto;
+}
+h1 {
+  font-family: 'fiftiesmovies';
+  font-size: 2.5em;
+}
+h2 {
+  font-family: 'antiquebookcover', serif;
+  font-size: 2em;
+}
+h3{
+  font-family: 'matchbookregular', serif;
+  font-size: 2em;
+}
+article {
+  float:left;
+  width: 90%;
+  border: .2em solid #F64B05;
+  margin: 1em;
+  padding: 1em 2em 1em 1em;
+  font-size: 1em;
+  background: #F8E8C6;
+  font-family: Georgia, serif;
+  max-height: 9999em;
+}
+article p{
+  margin-bottom: 1.5em;
+}
+#hiddencontent ul li {
+  list-style-type: square;
+  text-align: left;
+  float:left;
+}
+.morelessinfo{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.readmoreinput:not(:checked) {
+    display: none;
+}
+.readmoreinput + label {    
+    background-color: #F64B05;
+    border-radius: 5px; 
+    color: #F8E8C6;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    width: 12em;
+}
+.readmoreinput + label:before {
+    color: #F8E8C6;
+    content: "";
+    font-size: 1em;
+    padding-right: 0.3em;
+    width: 1em;
+}
+.readmoreinput:not(:checked) ~ .hiddencontent {
+    display: none;
+}
+.readmoreinput:checked ~ .hiddencontent {       
+    display: block;
+}
+.readmoreinput:checked + label:before {
+  content: "";
+}
+.readmoreinput + label .less, .readmoreinput:checked + label .more  {
+    display: none;
+}
+.readmoreinput:checked + label .less {
+    display: inline;
+}
+.bold {
+  font-weight:bold;
+}
+.published {
+  font-style: italic;
+  font-size: .75em;
+}
+.photog {
+  float: left;
+  width: 90%;
+  border: .2em solid #F64B05;
+  margin: 1em;
+  padding: 1em 2em 1em 1em;
+  font-size: 1em;
+  background: #F8E8C6;
+}
+.photog img{
+  filter url(filters.svg#grayscale)
+  filter: gray; 
+  -webkit-filter: grayscale(1); 
+  -webkit-transition: all .5s ease-in-out;
+}
+.photog img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
 #subnav {
-  margin-top: 0;
+  margin-top: 3em;
   float: left;
   width: 100%;
   background-color:#588AAD;
@@ -176,7 +340,7 @@ p {
   margin-top:0;
   position: relative;
   float: left;
-  font-size: 24px;
+  font-size: 1.5em;
   background-color: #588AAD;
 }
 #subnav li {
@@ -188,7 +352,7 @@ p {
   font-size: 0;
   height: 0;
   visibility: hidden;
-  content: "";
+  content: "after!";
   clear: both;
   overflow: auto;
 }
