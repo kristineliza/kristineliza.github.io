@@ -2,26 +2,23 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Kristin Elizabot</title>
+	<meta-name="viewport" content="width=device-width, initalscale=1">
+  <title>Kristin Elizabot</title>
 </head>
 	<body>
 		<nav id="navtop">
-			<a id="logo" href="#"><img src="images/midcentke2.png" alt="kristin logo"></a>
-			<ul class="clearfix">
-				<li class="link"><a href="#">WHO</a></li>
-  				<li class="link"><a href="#">READ</a>
+			<a id="logo" href="#"><img src="images/logokepunx.png" alt="kristin logo"></a>
+			<ul class="clearfix" "disable">
+				<li id="whoicon"><a href="#">WHO?</a></li>
+  				<li id="articon"><a href="#">CREATIVE</a>
   					<ul class="submenu1">
-  						<li><a href="#">Blog</a></li>
-  						<li><a href="#">Zines</a></li>
-  					</ul>
-  				</li>
-  				<li class="link"><a href="#">SEE</a>
-  					<ul class="submenu1">
+  						<li><a href="#">Read</a></li>
   						<li><a href="#">Photography</a></li>
   						<li><a href="#">Mixed Media</a></li>
+  						<li><a href="#">Music</a></li>
   					</ul>
   				</li>	
-  				<li class="link"><a href="#">Contact</a></li>
+  				<li id="envelopeicon"><a href="#">CONTACT</a></li>
   			</ul>	
 		</nav>
 	<header class="clearfix">
@@ -41,8 +38,9 @@
       <img src="images/wat.png" alt="what have you done for me lately face">
       </figure>
     </header> 
-    <main>
+    <main class="clearfix">
       <div id="contentwrap">
+            <div class="clearfix">
             <div id="column1">
             <article class="blog"> 
             <h1>BLOG</h1>
@@ -125,42 +123,34 @@
                     </div>
                     </div>
                   </article>  
-             
+                </div>
               </div>
+              <div class="clearfix">
              <div id="column2"> 
             <figure class="photog">
             <h1>Photography</h1>
             <img src="images/mannequinwindowsmaller.jpg">
+            <figcaption>Amateur photography of American Road Trip kitsch</figcaption>
             </figure>
             <figure class="photog">
             <h1>Music</h1>
             <img src="images/studio.jpg">
-            </figure>
+            <figcaption>Queer music from a closet in a bedroom</figcaption>
+            </figure>   
               </div>
+         </div>
          </div>
   </main>
 	<footer class="clearfix">	
 	<nav id="subnav">	
 		<ul>
-			<li class="link"><a href="https://twitter.com/kristinelizabot">Twitter</a></li>
-			<li class="link"><a href="https://instagram.com/maxmaxattack/">Instagram</a></li>
-			<li class="link"><a href="http://www.pigeongram.com/">Contact by Carrier Pigeon</a></li>
+			<li class="link"><a href="https://twitter.com/kristinelizabot"><img src="images/twittericon.png"></a></li>
+			<li class="link"><a href="https://instagram.com/maxmaxattack/"><img src="images/instagramicon.png"></a></li>
+			<li class="link"><a href="https://www.linkedin.com/in/kristinelizam"><img src="images/linkedinicon.png"></a></li>
+      <li class="link"><a href="mailto:kristin.eliza.m@gmail.com"><img src="images/gmailicon.png"></a></li>
 		</ul>
 	</nav>
 	</footer>
-<script src="https://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript">
-(function($) {          
-    $(document).ready(function(){                    
-        $(window).scroll(function(){                          
-            if ($(this).scrollTop() > 200) {
-                $('#navtop').fadeIn(500);
-            } else {
-                $('#navtop').fadeOut(500);
-            }
-        });
-    });
-})(jQuery);
-</script>		
+   
 </body>
 </html>
