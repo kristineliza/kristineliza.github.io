@@ -112,7 +112,7 @@ ul li {
 }
 ul li a {
   display: block;
-  padding: .5em .5em .5em 0;
+  padding: .5em .5em .5em .5em;
   font-family:'Arial';
   font-size: 1.2em;
   font-weight:bold;
@@ -360,7 +360,7 @@ figcaption {
   overflow: auto;
 }
 @media screen and (min-width: 500px) {
-  ul li a:hover {
+ ul li a:hover {
   background: #F64B05;
   display: block;
 }
@@ -385,7 +385,7 @@ li:hover li a:hover {
 @media screen and (max-width: 1023px){
   ul li a {
   display: block;
-  padding: .75em .75em .75em 0;
+  padding: .75em .75em .5em .75em;
   font-family:'Arial';
   font-size: 1em;
   font-weight:bold;
@@ -439,6 +439,7 @@ li:hover li a:hover {
     float:none;
     height: auto;
     width:100%;
+    padding:0;
     }
 }
 @media screen and (max-width: 977px) {
@@ -450,31 +451,33 @@ li:hover li a:hover {
   #see {
     display:none;
   }
-.submenu1 {
-  display:none;
-}
 ul li a {
   display: block;
-  padding: .5em .5em .5em 0;
+  padding: .5em .5em 0 .5em;
   font-family:'Arial';
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight:bold;
   text-decoration: none;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   color: #F8E8C6;
   margin:0;
   position:relative;
 }
 li:hover ul {
-  display: none; 
+  background-color: #588AAD;
+  display: block;
+}  
+li:hover li {
+  text-align: left;
 }
+
 #whoicon {
   width: 62px;
   height: 62px;
   background: url('../images/whoicon.png') no-repeat;
   text-indent: 100%;
-  margin: .5em 1em 1em 0;
+  margin: .5em 1em 0 1em;
   padding-top: .5em;
   white-space: nowrap;
   overflow: hidden;
@@ -484,10 +487,18 @@ li:hover ul {
   height: 62px;
   background: url('../images/paintbrushicon.png') no-repeat;
   text-indent: 100%;
-  margin: .5em 1em 1em 0;
+  margin: .5em 1em 0 1em;
   padding-top: .5em;
   white-space: nowrap;
   overflow: hidden;
+}
+#articon ul li a{
+    text-align: left;
+    text-indent: 1em;
+    margin:0;
+    padding: 0;
+    line-height:2em;
+    height: 2em;
 }
 #envelopeicon {
   width: 62px;
@@ -495,7 +506,7 @@ li:hover ul {
   background: url('../images/contacticon.png') no-repeat;
   text-indent: 100%;
   padding-top: .5em;
-  margin: .5em 1em 1em 0;
+  margin: .5em 1em 0 1em;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -509,4 +520,9 @@ li:hover ul {
     width:auto;
     padding:0;
     }
+}
+@media screen and (max-width:367px){
+  #logo {
+    display:none;
+  }
 }
