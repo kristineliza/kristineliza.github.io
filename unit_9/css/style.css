@@ -81,7 +81,7 @@ ul li a {
   display: block;
   padding: .5em .5em .5em .5em;
   font-family:'Arial';
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight:bold;
   text-decoration: none;
   text-align: center;
@@ -174,24 +174,20 @@ main {
   overflow:auto;
   margin:0;
   margin-bottom: 0;
-  height:100%;
+  background-color: #E8AE04;
 }
 #column1 {
   width:50%;
-  height:100%;
   background:#588AAD;
   padding: 1em;
   float: left;
   overflow: auto;
-  flex 
 }
 #column2 {
   width: 50%;
-  height: 100%;
   background:#E8AE04;
   padding: 1em;
   float:left;
-  overflow:auto;
 }
 h1 {
   font-family: 'fiftiesmovies';
@@ -318,7 +314,7 @@ figcaption {
 #subnav ul li a {
   padding: .2em .5em;
 }
-.clearfix-after {
+.clearfix:after {
   font-size: 0;
   height: 0;
   visibility: hidden;
@@ -488,7 +484,7 @@ li:hover li {
     padding:0;
     }
 }
-@media screen and (max-width:367px){
+@media screen and (max-width:425px){
   #logo {
     display:none;
   }
